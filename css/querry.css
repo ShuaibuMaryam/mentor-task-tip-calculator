@@ -1,9 +1,12 @@
-@media (max-width: 320px){
+@media (max-width: 768px){
     nav{
         padding: .4rem .5rem;
         gap: 0;
     }
     .desktop-nav{
+        display: none;
+    }
+    nav .logo{
         display: none;
     }
     .mobile-logo{
@@ -35,7 +38,7 @@
     }
     .challenge h3{
         font-size: .8rem;
-        width: 35%;
-        padding: 1.2rem .7rem;
+        
+        /* padding: 1.2rem .7rem; */
     }
 }
