@@ -1,0 +1,41 @@
+@media (max-width: 320px){
+    nav{
+        padding: .4rem .5rem;
+        gap: 0;
+    }
+    .desktop-nav{
+        display: none;
+    }
+    .mobile-logo{
+        display: grid;
+        align-content: center;
+    }
+    .mobile-logo > img{
+        width: 3rem;
+        
+    }
+    .mobile-nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: space-between;
+        width: 100%;
+    }
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    
+
+    /*-----Challenge-----*/
+    .challenge{
+        padding-left: .7rem;
+    }
+    .challenge h3{
+        font-size: .8rem;
+        width: 35%;
+        padding: 1.2rem .7rem;
+    }
+}
