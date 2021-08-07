@@ -37,7 +37,7 @@
     }
     .challenge h3{
         font-size: .8rem;
-        
+        width: 150px;
         /* padding: 1.2rem .7rem; */
     }
 }

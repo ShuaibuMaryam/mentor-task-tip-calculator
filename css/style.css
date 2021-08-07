@@ -17,6 +17,7 @@ nav{
 .desktop-nav{
     display: grid;
     grid-template-columns: 1fr max-content;
+    gap: 3rem;
 }
 nav .logo{
     display: grid;
@@ -88,11 +89,6 @@ nav ul li a > span{
     border-bottom: 1px solid lightgray;
     padding-left: 2rem;
     font-family: 'Barlow' sans-serif;
-}
-.text-wrapper{
-    display: grid;
-    align-content: center;
-    width: 15%;
 }
 .challenge h3{
     text-transform: uppercase;
