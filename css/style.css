@@ -8,11 +8,15 @@
     box-sizing: border-box;
 }
 /*-----Navigation Bar-----*/
-nav, .desktop-nav{
+nav{
     display: grid;
     grid-template-columns: 1fr max-content;
     gap: 3rem;
     padding: 1rem 3rem;
+}
+.desktop-nav{
+    display: grid;
+    grid-template-columns: 1fr max-content;
 }
 nav .logo{
     display: grid;
