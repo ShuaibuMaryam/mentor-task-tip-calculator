@@ -40,4 +40,28 @@
         width: 150px;
         /* padding: 1.2rem .7rem; */
     }
+
+
+    /*-----Main-----*/
+
+    /*-----Section 1-----*/
+    main{
+        padding: 2rem .3rem;
+    }
+    main .section-1{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 100%;
+        gap: 3.5rem;
+    }
+    .calculator-div > ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: .6rem;
+    }
+    .calculator-features{
+        font-size: .5rem;
+    }
 }

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Heebo:wght@300&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,500&display=swap'); */
 
 *{
     margin: 0;
@@ -12,7 +11,7 @@ nav{
     display: grid;
     grid-template-columns: 1fr max-content;
     gap: 3rem;
-    padding: 1rem 3rem;
+    padding: 1rem 0 1rem 3rem;
 }
 .desktop-nav{
     display: grid;
@@ -28,9 +27,6 @@ nav .logo{
 }
 .mobile-nav{
     display: none;
-}
-.mobile-logo > img{
-    
 }
 .hamburger{
     display: none;
@@ -78,6 +74,8 @@ nav ul li a > span{
     color: white;
     padding: 10px 23px;
     border-radius: 20px;
+    width: 1rem;
+    
 }
 #log-in-with-github > i{
     font-size: 1.1rem;
@@ -101,3 +99,86 @@ nav ul li a > span{
 }
 
 /*-----Main Content-----*/
+ main{
+     font-family: 'Heebo';
+     padding: 3rem 2rem;
+ }
+main .section-1{
+    display: grid;
+    grid-template-columns: 6fr 5fr;
+    gap: 3.5rem;
+}
+.calculator-div{
+    font-family: 'Barlow', sans-serif;
+}
+.calculator-div > img{
+    width: 100%;
+}
+.calculator-div > ul{
+    /* display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0; */
+    display: flex;
+    list-style: none;
+    margin: 20px 0;
+}
+.calculator-div ul li button{
+    text-transform: uppercase;
+    margin-right: .7rem;
+    font-size: .76rem;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: #DBE5E6;
+    color: #737373;
+    border: none;
+}
+#desktop-design-button{
+    color: #FFFFFF;
+    background-color: #3E54A3;
+}
+
+.calculator-features header{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+.calculator-features header > div{
+    display: flex;
+}
+.calculator-features div ul{
+    display: flex;
+    justify-content: start;
+    list-style: none;
+}
+.calculator-features .features-heading > p{
+    margin-right: .7rem;
+    padding: 2.5px 12.5px;
+    border-radius: 10px;
+    background-color: #E7EBF9;
+    font-size: .8rem;
+    font-weight: 999;
+    letter-spacing: 2px;
+    color: #3E54A3;
+    font-family: 'Heebo', sans-serif;
+}
+.features-heading > ul li span{
+    margin-right: .6rem;
+    font-size: .9rem;
+    font-weight: bold;
+    font-family: 'Heebo' !important;
+} 
+.calculator-features header .level > p{
+    font-size: .9rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #AAD742;
+    padding: .3rem .5rem;
+}
+.calculator-features header .level > span{
+    font-size: .9rem;
+    border: 1px solid #AAD742;
+    font-weight: bold;
+    padding: .3rem .7rem;
+}
