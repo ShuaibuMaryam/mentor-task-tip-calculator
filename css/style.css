@@ -1,7 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .container{
     width: 80%;
     margin: 0 auto;
-
+    display: grid;
+    grid-template-rows: 1fr max-content;
+    gap: 2rem;
+    justify-content: center;
+    border: 1px solid;
 }
 .header{
     text-align: center;
@@ -12,5 +21,32 @@
 .calculator{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    /* width: 80%; */
+    margin: 0 auto;
+    border: 1px solid;
+    padding: 1rem;
+}
+.left{
+    display: grid;
+    grid-template-rows: 1f1 1fr 1fr;
+    gap: 1rem;
+}
+.left span{
+    font-size: .9rem;
+}
+.calculator .left .select-tip .tip-options{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .5rem;
 
+}
+.calculator .left .select-tip .tip-options > button{
+    padding: .3rem 1rem;
+}
+
+
+.right span{
+    font-weight: initial;
+    font-size: .9rem;
 }
