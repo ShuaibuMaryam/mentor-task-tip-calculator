@@ -1,0 +1,8 @@
+@media(max-width: 600px){
+    .calculator{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+    }
+}
