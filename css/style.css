@@ -46,7 +46,7 @@
 }
 .left input{
     padding: .3rem;
-    margin-top: .5rem;
+    margin-top: .4rem;
     text-indent: 100%;
     width: 100%;
 }
@@ -71,9 +71,13 @@
     font-weight: initial;
     font-size: .9rem;
 }
+.right .tip-amount{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
 .right .reset-button{
     display: grid;
-    align-content: ;
 }
 .right .reset-button button{
     width: 100%;
