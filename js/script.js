@@ -1,11 +1,15 @@
-// let bill = document.getElementById("bill").value;
+const calculator = document.querySelector(".calculator");
+const tip_options = calculator.querySelector(".tip-options");
 
-// let numberOfPeople = document.getElementById("people").value;
+tip_options.addEventListener('click', e => {
+ if (e.target.matches('button')) {
+   
+    const key = e.target;
+    const action = key.dataset.action;
+    const keyContent = key.textContent;
 
+    console.log(keyContent, action);
+     
+ }
+});
 
-// window.addEventListener('onload', function(event){
-//     event.preventDefault();
-
-//     let result = bill / numberOfPeople;
-//     document.getElementById("tip-amount").innerHTML = result;
-// })
