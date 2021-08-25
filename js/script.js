@@ -14,9 +14,9 @@ tip_options.addEventListener('click', ({ target }) => {
     const bill = get_bill.value;
     const numberPersons = get_people.value;
 
-    if (!get_bill.value && !get_bill.value) {
-      console.log('Values needed!');
-    } else if (isNaN(get_bill.value) && isNaN(get_bill.value)) {
+    if (!get_bill.value || !get_people.value) {
+        console.log('Values needed!');
+    } else if (isNaN(get_bill.value) && isNaN(get_people.value)) {
       console.log('Invalid Input');
     } else {
       bill_calculation(action, bill, numberPersons);
