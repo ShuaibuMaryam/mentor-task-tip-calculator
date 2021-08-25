@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Splitter</title>
 </head>
 <body>
     <div class="calculator">
         <div>
-            <input type="text" id="bill" value="0">
+            <span>Bill</span>
+            <input type="text" id="bill" placeholder="0.0">
         </div>
         <div>
             <div class="select-tip">
@@ -25,16 +26,17 @@
             </div>
         </div>
         <div>
-            <input type="text" id="people" value="0">
+            <span>Number of Persons</span>
+            <input type="text" id="people" placeholder="0.0">
         </div>
         <div class="right">
             <div class="tip-amount">
                 <h4>Tip Amount <br> <span>/ person</span></h4><br>
-                <h3 id="tip-amount"></h3>
+                <h3 id="tip-amount">---</h3>
             </div>
             <div class="total">
                 <h4>Total<br> <span>/ person</span></h4><br>
-                <h3 id="tip-total-amount"></h3>
+                <h3 id="tip-total-amount">---</h3>
             </div>
             <div class="reset-button">
                 <button data-action="reset">RESET</button>

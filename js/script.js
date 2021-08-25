@@ -1,38 +1,56 @@
-const calculator = document.querySelector(".calculator"),
-    tip_options = calculator.querySelector(".tip-options"),
-    get_bill = calculator.querySelector("#bill"),
-    get_people = calculator.querySelector("#people"),
-    tip_amount = calculator.querySelector("#tip-amount"),
-    tip_total_amount = calculator.querySelector("#tip-total-amount"),
-    reset_button = calculator.querySelector("[data-action='reset']");
+const calculator = document.querySelector('.calculator'),
+  tip_options = calculator.querySelector('.tip-options'),
+  get_bill = calculator.querySelector('#bill'),
+  get_people = calculator.querySelector('#people'),
+  tip_amount = calculator.querySelector('#tip-amount'),
+  tip_total_amount = calculator.querySelector('#tip-total-amount'),
+  reset_button = calculator.querySelector("[data-action='reset']");
 
-        
-
-tip_options.addEventListener('click', ({target}) => {
- if (target.matches('button')) {
-   
+tip_options.addEventListener('click', ({ target }) => {
+  if (target.matches('button')) {
     const action = target.dataset.action;
     // const keyContent = target.textContent;
-
     // console.log(keyContent, action);
-     const bill = get_bill.value;
-     const numberPersons = get_people.value;
-     
-    bill_calculation(action, bill, numberPersons);
-     
- }
+
+    const bill = get_bill.value;
+    const numberPersons = get_people.value;
+
+      if (!get_bill.value && !get_bill.value) {
+        
+          console.log('Values needed!');
+          
+      } else if (isNaN(get_bill.value) && isNaN(get_bill.value)) {
+          
+          console.log("Invalid Input");
+          
+      } else {
+          
+          bill_calculation(action, bill, numberPersons);
+          
+    }
+  }
 });
 
+reset_button.addEventListener('click', () => {
+  get_bill.value = null;
+  get_people.value = null;
+  tip_amount.innerHTML = '---';
+  tip_total_amount.innerHTML = '---';
+});
+
+/* METHODS */
+
 const bill_calculation = (x, y, z) => {
+  let tmp_result = (x / 100) * y;
+  tmp_result = tmp_result.toFixed(2);
 
-    let tmp_result = (x / 100) * y;
+  tip_amount.innerHTML = tmp_result;
+  tip_total_amount.innerHTML = tmp_result * z;
+};
 
 
-    
-    console.log(x, y, z);
-    return tmp_result;
 
-}
+
 
 /* const values = [];
     
@@ -48,14 +66,6 @@ const bill_calculation = (x, y, z) => {
         values.push(target.value);
         // console.log(values)
     }) */
-
-
-
-reset_button.addEventListener('click', () => {
-    get_bill.value = 0;
-    get_people.value = 0;
-})
-
 
 
 /* 
