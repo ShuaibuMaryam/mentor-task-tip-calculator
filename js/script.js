@@ -49,9 +49,6 @@ const bill_calculation = (x, y, z) => {
 };
 
 
-
-
-
 /* const values = [];
     
     get_bill.addEventListener('change', ({ target }) => {
