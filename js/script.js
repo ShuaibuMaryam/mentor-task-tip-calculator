@@ -1,10 +1,10 @@
-const calculator = document.querySelector('.calculator'),
-  tip_options = calculator.querySelector('.tip-options'),
-  get_bill = calculator.querySelector('#bill'),
-  get_people = calculator.querySelector('#people'),
-  tip_amount = calculator.querySelector('#tip-amount'),
-  tip_total_amount = calculator.querySelector('#tip-total-amount'),
-  reset_button = calculator.querySelector("[data-action='reset']");
+const calculator = document.querySelector('.calculator');
+const tip_options = calculator.querySelector('.tip-options');
+const get_bill = calculator.querySelector('#bill');
+const get_people = calculator.querySelector('#people');
+const tip_amount = calculator.querySelector('#tip-amount');
+const tip_total_amount = calculator.querySelector('#tip-total-amount');
+const reset_button = calculator.querySelector("[data-action='reset']");
 
 tip_options.addEventListener('click', ({ target }) => {
   if (target.matches('button')) {
