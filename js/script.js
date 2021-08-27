@@ -72,3 +72,4 @@ const bill_calculation = (x, y, z) => {
     just beside the text "tip amount" and the result after dividing is displayed beside the text "total / person"
     by the right hand side... or at least that's what i think. sigh! hope i have not succeeded in confusing you. 
 */
+ 
