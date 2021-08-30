@@ -8,9 +8,9 @@
     grid-template-rows: 1fr max-content;
     gap: 2rem;
     justify-content: center;
-    width: 80%;
     margin: 5rem auto;
     padding: 2rem 0;
+    /* width: 80%; */
 }
 .header{
     text-align: center;
@@ -21,9 +21,8 @@
 .calculator{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin: 0 auto;
     /* border: 1px solid; */
+    gap: 1rem;
     padding: 1rem;
 }
 .icon{
@@ -33,12 +32,9 @@
     color: gray;
     font-size: .8rem;
 }
-#user{
-    /* top: 56.3%; */
-}
 .left{
     display: grid;
-    grid-template-rows: 1f1 1fr 1fr;
+    grid-template-rows: 1f1 1fr max-content;
     gap: 1rem;
 }
 .left span{
@@ -53,7 +49,7 @@
 .calculator .left .select-tip .tip-options{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: .5rem;
+    gap: 1rem;
     margin-top: .5rem;
 }
 .calculator .left .select-tip .tip-options > button{
@@ -71,7 +67,7 @@
     font-weight: initial;
     font-size: .9rem;
 }
-.right .tip-amount{
+.right .tip-amount, .right .total{
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;

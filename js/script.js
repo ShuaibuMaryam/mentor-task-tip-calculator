@@ -1,4 +1,4 @@
-const calculator = document.querySelector('.calculator');
+const calculator = document.querySelector('.container');
 const tip_options = calculator.querySelector('.tip-options');
 const get_bill = calculator.querySelector('#bill');
 const get_people = calculator.querySelector('#people');
